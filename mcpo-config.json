@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "openfec": {
+      "command": "node",
+      "args": ["../mcp-openfec/build/server.js"],
+      "env": {
+        "OPENFEC_API_KEY": "fGgFq3i40P8NRmksRN0S64wFGgC88xYVwhZAaiZk"
+      }
+    }
+  }
+}
