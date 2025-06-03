@@ -3,7 +3,9 @@
 FROM node:alpine
 
 # Install Python and pip
-RUN apk add --no-cache python3 py3-pip
+RUN apk add --no-cache python3 py3-pip curl tar && \
+    curl -L https://github.com/astral-sh/uv/releases/download/0.1.34/uv-x86_64-unknown-linux-musl.tar.gz | tar -xz && \
+    mv uv /usr/local/bin/
 
 # Set the working directory inside the container
 WORKDIR /app
