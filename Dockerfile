@@ -15,7 +15,7 @@ COPY . /app/
 RUN chmod +x build.sh
 
 # Execute the build script
-RUN bash ./build.sh
+RUN sh ./build.sh
 
 # Command to run when the container starts
 # This uses the start command you configured for mcpo
