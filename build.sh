@@ -7,9 +7,8 @@ echo "Building mcpo (Python dependencies)..."
 # Create and activate a virtual environment
 python3 -m venv .venv
 . .venv/bin/activate
-# Assuming Railway provides a Python environment and pip
-pip install -r mcpo/requirements.txt
-# Or if using uv: uv sync --locked mcpo/uv.lock
+# Assuming Railway provides a Python environment and uv
+uv sync --locked
 # Deactivate the virtual environment
 deactivate
 
